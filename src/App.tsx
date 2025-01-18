@@ -112,7 +112,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-6 md:p-10 lg:p-14">
+    <div className="min-h-screen bg-black flex items-center justify-center p-6 md:p-10 lg:p-14 overflow-x-hidden">
       <div className={`w-full max-w-[1000px] opacity-0 transition-all duration-1000 ${isLoaded ? 'opacity-100' : ''}`}>
         <div className={`text-center mb-16 transform transition-all duration-1000 delay-200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
           <p className="font-instrument italic text-cyan-400/60 text-base md:text-lg tracking-wide">{quote}</p>

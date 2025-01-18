@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Instrument Serif';
+    src: url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+    font-display: swap;
+  }
+
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+.font-instrument {
+  font-family: 'Instrument Serif', serif;
+}

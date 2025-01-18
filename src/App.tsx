@@ -158,7 +158,7 @@ function App() {
           </div>
         </div>
         
-        <div className={`grid grid-cols-[repeat(auto-fill,minmax(16px,1fr))] gap-1.5 md:gap-2 transform transition-all duration-1000 delay-[1100ms] ${isLoaded ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-4 opacity-0 scale-95'}`}>
+        <div className={`grid grid-cols-[repeat(auto-fill,minmax(12px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(16px,1fr))] gap-1 sm:gap-1.5 md:gap-2 transform transition-all duration-1000 delay-[1100ms] ${isLoaded ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-4 opacity-0 scale-95'}`}>
           {days.map((day, index) => {
             const isCompleted = isBefore(day, tomorrow);
             
@@ -178,7 +178,7 @@ function App() {
               >
                 <div
                   className={`
-                    w-[12px] h-[12px] md:w-[14px] md:h-[14px] transition-all duration-300 cursor-pointer
+                    w-[10px] h-[10px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] transition-all duration-300 cursor-pointer
                     transform hover:scale-150
                     rounded-[2px]
                     ${getDotColor(day)}
@@ -187,9 +187,9 @@ function App() {
                 />
                 
                 {/* Tooltip */}
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-2
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 sm:px-4 sm:py-2
                               bg-black/50 backdrop-blur-sm border border-cyan-700/40
-                              text-cyan-300 text-base md:text-lg rounded-sm 
+                              text-cyan-300 text-sm sm:text-base md:text-lg rounded-sm 
                               opacity-0 group-hover:opacity-100 
                               scale-95 group-hover:scale-100
                               -translate-y-2 group-hover:translate-y-0
@@ -204,25 +204,25 @@ function App() {
           })}
         </div>
 
-        <div className="flex items-center gap-8 mt-16 text-cyan-400/80 text-lg md:text-xl font-instrument italic tracking-wide flex-wrap">
-          <div className="flex items-center gap-5">
-            <div className="w-5 h-5 bg-white/[0.08] rounded-[2px]"></div>
+        <div className="flex items-center gap-4 sm:gap-8 mt-8 sm:mt-16 text-cyan-400/80 text-base sm:text-lg md:text-xl font-instrument italic tracking-wide flex-wrap justify-center">
+          <div className="flex items-center gap-3 sm:gap-5">
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-white/[0.08] rounded-[2px]"></div>
             <span>Future</span>
           </div>
-          <div className="flex items-center gap-5">
-            <div className="w-5 h-5 bg-blue-900/50 rounded-[2px]"></div>
+          <div className="flex items-center gap-3 sm:gap-5">
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-blue-900/50 rounded-[2px]"></div>
             <span>Completed</span>
           </div>
-          <div className="flex items-center gap-5">
-            <div className="w-5 h-5 bg-cyan-400 shadow-lg shadow-cyan-500/60 rounded-[2px]"></div>
+          <div className="flex items-center gap-3 sm:gap-5">
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-cyan-400 shadow-lg shadow-cyan-500/60 rounded-[2px]"></div>
             <span>Today</span>
           </div>
         </div>
       </div>
-      <footer className={`fixed bottom-0 left-0 right-0 p-4 text-center text-cyan-400/80 font-instrument italic text-base md:text-lg transform transition-all duration-1000 delay-[2000ms] ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-        <div className="flex flex-col items-center gap-3">
-          <span className="text-cyan-300 text-lg md:text-xl font-medium tracking-wide">Made by AK</span>
-          <div className="flex items-center gap-5">
+      <footer className={`fixed bottom-0 left-0 right-0 pb-4 pt-2 text-center text-cyan-400/80 font-instrument italic text-sm sm:text-base md:text-lg bg-black/80 backdrop-blur-sm transform transition-all duration-1000 delay-[2000ms] ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+        <div className="flex flex-col items-center gap-2 sm:gap-3">
+          <span className="text-cyan-300 text-base sm:text-lg md:text-xl font-medium tracking-wide">Made by AK</span>
+          <div className="flex items-center gap-4 sm:gap-5">
             <a 
               href="https://github.com/iamakchavan" 
               target="_blank" 

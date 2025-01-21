@@ -106,9 +106,9 @@ function App() {
   };
 
   const getDotColor = (day: Date) => {
-    if (isToday(day)) return 'bg-cyan-400 shadow-lg shadow-cyan-500/60';
-    if (isBefore(day, tomorrow)) return 'bg-blue-900/50';
-    return 'bg-white/[0.08] hover:bg-white/20';
+    if (isToday(day)) return 'bg-indigo-500 shadow-lg shadow-indigo-500/50';
+    if (isBefore(day, tomorrow)) return 'bg-white/[0.08]';
+    return 'bg-cyan-400 shadow-lg shadow-cyan-500/60 hover:bg-cyan-300';
   };
 
   return (
@@ -206,15 +206,15 @@ function App() {
 
         <div className="flex items-center gap-4 sm:gap-8 mt-8 sm:mt-16 text-cyan-400/80 text-base sm:text-lg md:text-xl font-instrument italic tracking-wide flex-wrap justify-center">
           <div className="flex items-center gap-3 sm:gap-5">
-            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-white/[0.08] rounded-[2px]"></div>
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-cyan-400 shadow-lg shadow-cyan-500/60 rounded-[2px]"></div>
             <span>Future</span>
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
-            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-blue-900/50 rounded-[2px]"></div>
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-white/[0.08] rounded-[2px]"></div>
             <span>Completed</span>
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
-            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-cyan-400 shadow-lg shadow-cyan-500/60 rounded-[2px]"></div>
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded-[2px]"></div>
             <span>Today</span>
           </div>
         </div>

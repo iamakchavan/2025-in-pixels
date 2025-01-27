@@ -1,79 +1,62 @@
-# CyberYear_2025
+# CyberYear
 
-> [!WARNING]
-> Time is a finite resource. Track it wisely.
+A beautiful, minimalist web application that visualizes your journey through 2025, one day at a time. Built with React, TypeScript, and Tailwind CSS.
 
-A neural interface for visualizing your temporal journey through the cybernetic landscape of 2025. Built with cutting-edge web technologies for optimal human-time interaction.
+## Features
 
-## Core Systems
+- 🎨 Visual representation of each day in 2025
+- ✨ Elegant animations and transitions
+- 📊 Real-time progress tracking
+- 💫 Interactive hover effects with detailed date information
+- 📱 Fully responsive design
+- 🌙 Dark mode aesthetic
 
-- 🧠 Neural timestamp visualization matrix
-- ⚡ Quantum state transitions and animations
-- 📊 Real-time chronological data processing
-- 🔮 Holographic hover interface with temporal data streams
-- 📱 Cross-dimensional responsive architecture
-- 🌌 Dark matter aesthetic engine
+## Tech Stack
 
-## Tech Matrix
+- React 18
+- TypeScript
+- Tailwind CSS
+- Vite
+- date-fns
+- Lucide React icons
 
-```yaml
-core:
-  framework: React^18.3.1
-  language: TypeScript^5.5.3
-  styling: TailwindCSS^3.4.1
-  builder: Vite^5.4.2
+## Getting Started
 
-dependencies:
-  time_processor: date-fns^3.3.1
-  neural_icons: lucide-react^0.344.0
-```
-
-## Neural Initialization
-
-1. Clone the neural pathway:
+1. Clone the repository:
 ```bash
-git clone https://github.com/iamakchavan/2025-in-pixels.git && cd 2025-in-pixels
+git clone https://github.com/iamakchavan/2025-in-pixels.git
+cd 2025-in-pixels
 ```
 
-2. Sync quantum dependencies:
+2. Install dependencies:
 ```bash
-npm install # Initializing neural networks...
+npm install
 ```
 
-3. Boot temporal server:
+3. Start the development server:
 ```bash
-npm run dev # Activating chronological matrix...
+npm run dev
 ```
 
-4. Deploy to cyberspace:
+4. Build for production:
 ```bash
-npm run build # Compiling quantum states...
+npm run build
 ```
 
-## Chromatic Matrix Guide
+## Color Guide
 
-```css
-future    = #22D3EE /* Quantum cyan pulse */
-today     = #6366F1 /* Neural indigo surge */
-completed = #FFFFFF /* Temporal echo */
-```
+- 🔷 Future dates: Bright cyan with glow effect
+- 🟣 Today: Vibrant indigo with glow effect
+- ⚪ Completed days: Subtle white
 
-## Neural License
+## License
 
-Protected by the MIT Quantum Protocol - See [LICENSE](LICENSE) for cryptographic details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## System Architect
+## Author
 
-```js
-const architect = {
-  alias: "AK",
-  neural_links: {
-    github: "@iamakchavan",
-    instagram: "@iamakchavan",
-    x: "@iamakchavan"
-  }
-};
-```
+Made with ❤️ by AK
 
-> [!NOTE]
-> "In the digital realm, every pixel tells a story of time."
+- GitHub: [@iamakchavan](https://github.com/iamakchavan)
+- Instagram: [@iamakchavan](https://instagram.com/iamakchavan)
+- X: [@iamakchavan](https://x.com/iamakchavan)

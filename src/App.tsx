@@ -106,7 +106,7 @@ function App() {
   };
 
   const getDotColor = (day: Date) => {
-    if (isToday(day)) return 'bg-pink-500 shadow-lg shadow-pink-500/80 ring-2 ring-pink-400/50 hover:shadow-pink-500/90';
+    if (isToday(day)) return 'bg-pink-500 shadow-lg shadow-pink-500/80 ring-2 ring-pink-400/50 hover:shadow-pink-500/90 animate-pulse-glow';
     if (isBefore(day, tomorrow)) return 'bg-white/[0.08]';
     return 'bg-cyan-400 shadow-lg shadow-cyan-500/60 hover:bg-cyan-300';
   };
@@ -214,7 +214,7 @@ function App() {
             <span>Completed</span>
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
-            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-pink-500 shadow-lg shadow-pink-500/80 ring-2 ring-pink-400/50 rounded-[2px]"></div>
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-pink-500 shadow-lg shadow-pink-500/80 ring-2 ring-pink-400/50 rounded-[2px] animate-pulse-glow"></div>
             <span>Today</span>
           </div>
         </div>

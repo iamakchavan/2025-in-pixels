@@ -1,50 +1,54 @@
 # CyberYear
 
-A minimalist web application that tracks your journey through 2025, visualizing each day as an interactive pixel. Watch your year unfold with elegant animations and real-time progress tracking.
+A sleek web application that visualizes your journey through 2025. Each day is represented as an interactive pixel, creating a beautiful digital tapestry of time. Watch as the year unfolds with elegant animations and track your progress in real-time.
 
-## Features
+![CyberYear](preview.png)
 
-- Daily progress visualization
-- Interactive hover effects
-- Real-time progress tracking
+## ✨ Features
+
+- Interactive pixel grid for each day of 2025
+- Elegant hover effects with date information
+- Real-time progress tracking with animated counters
+- Inspirational daily quotes
 - Responsive design for all devices
-- Beautiful animations
-- Dark mode interface
+- Sleek dark mode interface with neon accents
 
-## Built With
+## 🛠️ Built With
 
-- React
+- React 18
 - TypeScript
 - Tailwind CSS
 - Vite
 - date-fns
 
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
 # Clone repository
 git clone https://github.com/iamakchavan/2025-in-pixels.git
+
+# Navigate to directory
+cd 2025-in-pixels
 
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
-## Colors
+## 🎨 Color Guide
 
-- Future: Bright cyan
-- Today: Glowing indigo
-- Past: Subtle white
+The application uses a carefully chosen color palette:
+- Future Days: Bright cyan with glow
+- Today: Neon pink with breathing effect
+- Past Days: Subtle white
 
-## Creator
+## 🔗 Links
 
-Built by AK ([@iamakchavan](https://github.com/iamakchavan))
+- Creator: [@iamakchavan](https://github.com/iamakchavan)
+- Live Demo: [cyberyear.vercel.app](https://cyberyear.vercel.app)
 
-## License
+## 📄 License
 
-MIT License
+MIT License - feel free to use this project for personal or commercial purposes.

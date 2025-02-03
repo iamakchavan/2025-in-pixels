@@ -101,8 +101,8 @@ function App() {
 
   const getProgressPercentage = (date: Date | null) => {
     const completed = getCompletedDays(date);
-    const percentage = (completed / days.length) * 100;
-    return completed === days.length ? "100.0" : percentage.toFixed(1);
+    const percentage = ((days.length - completed) / days.length) * 100;
+    return completed === 0 ? "100.0" : percentage.toFixed(1);
   };
 
   const getDotColor = (day: Date) => {
@@ -150,9 +150,9 @@ function App() {
               />%
             </span>
             <span className="font-instrument italic text-lg md:text-xl ml-3 opacity-80 transition-all duration-300 ease-in-out">
-              complete
+              remaining
               {hoveredDate && !isBefore(hoveredDate, tomorrow) && (
-                <span className="text-cyan-400/50 ml-2 transition-all duration-300 ease-in-out">by {format(hoveredDate, 'MMM d')}</span>
+                <span className="text-cyan-400/50 ml-2 transition-all duration-300 ease-in-out">until {format(hoveredDate, 'MMM d')}</span>
               )}
             </span>
           </div>
